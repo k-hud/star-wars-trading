@@ -2,8 +2,15 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 1000px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: auto;
+}
+
 .row {
-    width: 100%;
+    width: 960px;
     margin: 0 auto;
     border: 3px dotted green;
 }
@@ -15,6 +22,18 @@
     padding-left: 1.041666667%;
 }
 
+/* Clearfix */
+
+.row::before {
+    content: '';
+    float: none;
+}
+
+.row::after {
+    content: '';
+    float: none;
+}
+
 
 /* Mobile Settings */
 
@@ -22,7 +41,9 @@
     width: 100%;
 }
 
-@media (min-width: 640px) {
+/* Desktop Settings */
+
+@media only screen and (min-width: 640px) {
 
     .col-3 {
         width: 25%;
@@ -38,5 +59,6 @@
 
     .col-12 {
         width: 100%;
+        max-width: 1000px;
     }
 }

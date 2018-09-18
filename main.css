@@ -1,0 +1,21 @@
+main {
+    padding-top: 20px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+    border: 3px solid purple;
+}

@@ -2,17 +2,11 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 1000px;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin: auto;
-}
-
 .row {
-    width: 960px;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-left: 20px;
     margin: 0 auto;
-    border: 3px dotted green;
 }
 
 
@@ -24,14 +18,14 @@
 
 /* Clearfix */
 
-.row::before {
+.row::before 
+.row::after {
     content: '';
-    float: none;
+    display: table;
 }
 
 .row::after {
-    content: '';
-    float: none;
+    clear: both;
 }
 
 
@@ -51,6 +45,7 @@
 
     .col-4 {
         width: 33.33%;
+        margin: 0 auto;
     }
 
     .col-6 {
